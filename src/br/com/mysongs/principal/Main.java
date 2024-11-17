@@ -2,6 +2,7 @@ package br.com.mysongs.principal;
 
 import br.com.mysongs.models.Podcast;
 import br.com.mysongs.models.Song;
+import br.com.mysongs.models.myFavorites;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,7 +33,8 @@ public class Main {
             favoritePodcast.likes();
         }
 
-
-
+        myFavorites favorites = new myFavorites();
+        favorites.include(favoritePodcast);
+        favorites.include(mySong);
     }
 }

@@ -32,7 +32,7 @@ public class Song extends Audio {
 
     @Override
     public int getRating() {
-        if(this.getTotalPlays() > 200) {
+        if(this.getTotalPlays() > 2000) {
             return 10;
         } else {
             return 7;
