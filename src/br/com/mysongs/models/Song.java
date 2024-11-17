@@ -1,8 +1,6 @@
 package br.com.mysongs.models;
 
-import br.com.mysongs.models.Audio;
-
-public class Songs extends Audio {
+public class Song extends Audio {
 
     private String artist;
     private String album;
@@ -30,5 +28,14 @@ public class Songs extends Audio {
 
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    @Override
+    public int getRating() {
+        if(this.getTotalPlays() > 200) {
+            return 10;
+        } else {
+            return 7;
+        }
     }
 }

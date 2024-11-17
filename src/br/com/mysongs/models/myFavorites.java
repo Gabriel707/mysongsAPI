@@ -1,2 +1,6 @@
-package br.com.mysongs.models;public class myFavorites {
+package br.com.mysongs.models;
+
+public class myFavorites {
+
+
 }
